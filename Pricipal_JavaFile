@@ -1,0 +1,137 @@
+import java.util.Scanner;
+import java.io.IOException;
+
+public class Principal{
+	
+	public void Imprimir(String x) throws IOException, InterruptedException {
+		for(int i = 0; i < x.length(); i++) {
+			
+			char k = x.charAt(i);
+			System.out.print(k);
+			Thread.sleep(15);
+		}
+				
+	}
+	
+	public static void main(String[] args) throws IOException, InterruptedException {
+		Scanner teclado = new Scanner(System.in);
+		int escolha;
+		
+		String linha1, linha2, linha3, linha4, linha5, linha6;
+		String linha21, linha22, linha23, linha24, linha25, linha26;
+		String linha31, linha32, linha33, linha34, linha35, linha36;
+		String core1, core2,core3,core4,core5,core6,core7;
+		
+		linha1 = "╔═╗   ╔═╗ ╔═╗ ╔═╗ ╔═══╗ ╔════╗";
+		linha2 = "║ ║   ║ ║ ║ ║ ║ ║ ║ ╔═╝ ║╔══╗║";
+		linha3 = "║ ║   ║ ║ ║ ║ ║ ║ ║ ╚═╗ ║║  ║║";
+		linha4 = "║ ║   ║ ║ ║ ║ ║ ║ ╚═╗ ║ ║╚══╝║";
+		linha5 = "║ ╚═╗ ║ ╚═╝ ║ ║ ║ ╔═╝ ║ ║╔══╗║";
+		linha6 = "╚═══╝ ╚═════╝ ╚═╝ ╚═══╝ ╚╝  ╚╝";
+		
+		linha21 = "		╔════╗ ╔═════╗ ╔═╗ ╔═╗ ╔═╗ ╔════╗ ╔════╗ ╔═══╗ ╔════╗";
+		linha22 = "		║╔══╗║ ║╔═══╗║ ║ ║ ║ ╚╗║ ║ ║╔═══╝ ║╔═══╝ ║ ╔═╝ ║╔══╗║";
+		linha23 = "		║╚══╝║ ║╚═══╝║ ║ ║ ║  ╚╝ ║ ║║     ║╚══╗  ║ ╚═╗ ║║  ║║";
+		linha24 = "		║╔═══╝ ║╔═╗ ╔╝ ║ ║ ║ ╔╗  ║ ║║     ║╔══╝  ╚═╗ ║ ║╚══╝║";
+		linha25 = "		║║     ║║ ╚╗║  ║ ║ ║ ║╚╗ ║ ║╚═══╗ ║╚═══╗ ╔═╝ ║ ║╔══╗║";
+		linha26 = "╗ 	╚╝     ╚╝  ╚╝  ╚═╝ ╚═╝ ╚═╝ ╚════╝ ╚════╝ ╚═══╝ ╚╝  ╚╝";
+		
+		linha31 = "╔════╗ ╔═╗ ╔═╗		╔═══════╗ ╔════╗		";
+		linha32 = "║╔═══╝ ║ ║ ║ ║		╚══╗ ╔══╝ ║╔═══╝		";
+		linha33 = "║╚══╗  ║ ║ ║ ║		   ║ ║    ║╚══╗ 		";
+		linha34 = "║╔══╝  ║ ║ ║ ║		   ║ ║    ║╔══╝ 		";
+		linha35 = "║╚═══╗ ║ ╚═╝ ║		   ║ ║    ║╚═══╗		";
+		linha36 = "╚════╝ ╚═════╝		   ╚═╝    ╚════╝		";
+		
+		core1 = "    ╔═══╗ ╔═══╗";
+		core2 = "  ╔═╝   ╚═╝   ╚═╗";
+		core3 = "  ║             ║";
+		core4 = "  ╚═╗         ╔═╝";
+		core5 = "    ╚═╗     ╔═╝";
+		core6 = "      ╚═╗ ╔═╝";
+		core7 = "              		                		        ╚═╝";
+		
+		
+		String nome, amor = "Ana Luisa";
+		System.out.println("Olá, USER54139! Seja bem-vinde. \nPor favor, insira seu norme:");
+		nome = teclado.nextLine();
+		
+		
+		if(amor.equals(nome)) {
+			System.out.println("\nSeja bem vinda, Rainha Suprema de Todo o Universo, também conhecida como:");
+			System.out.println("Princesa de Mestre Angelis;");
+			System.out.println("Deusa musa maravilhosa;");
+			System.out.println("Bebê;");
+			System.out.println("Gatinha;");
+			System.out.println("Amor;");
+			System.out.println(amor + " <3");
+			System.out.println("O que gostaria de fazer agora? \n Opção 1: VER SURPRESA ESPECIAL 0.7 \n Opção 2: Ler textão \n Opção 3: Sair");
+			escolha = Integer.parseInt(teclado.nextLine());
+			
+			switch(escolha) {
+			case 1:
+				Principal r = new Principal();
+				
+				r.Imprimir(linha1);
+				r.Imprimir(linha21);
+				System.out.println();
+				r.Imprimir(linha2);
+				r.Imprimir(linha22);
+				System.out.println();
+				r.Imprimir(linha3);
+				r.Imprimir(linha23);
+				System.out.println();
+				r.Imprimir(linha4);
+				r.Imprimir(linha24);
+				System.out.println();
+				r.Imprimir(linha5);
+				r.Imprimir(linha25);
+				System.out.println();
+				r.Imprimir(linha6);
+				r.Imprimir(linha26);
+				
+				System.out.println("\n");
+				r.Imprimir(linha31);
+				r.Imprimir(core1);
+				System.out.println();
+				r.Imprimir(linha32);
+				r.Imprimir(core2);
+				System.out.println();
+				r.Imprimir(linha33);
+				r.Imprimir(core3);
+				System.out.println();
+				r.Imprimir(linha34);
+				r.Imprimir(core4);
+				System.out.println();
+				r.Imprimir(linha35);
+				r.Imprimir(core5);
+				System.out.println();
+				r.Imprimir(linha36);
+				r.Imprimir(core6);
+				System.out.println();
+				r.Imprimir(core7);
+				
+				String AAA = teclado.nextLine();
+				
+				break;
+			case 2:
+				System.out.println("Bíblia, Cânticos capítulo 8 verículo 7:");
+				System.out.println("'Nem muitas águas conseguem apagar o amor;\n os rios não conseguem levá-lo na correnteza.\n Se alguém oferecesse todas as riquezas\n dasua casa para adquirir o amor,\n seria totalmente desprezado.' ");
+				System.out.println("\n (Em resumo, quer textão vai ler a bíblia)");
+				
+				String AAb = teclado.nextLine();
+				
+				break;
+			case 3:
+				System.out.println("Tudo bem, até depois!");
+				String AA = teclado.nextLine();
+				System.exit(0);
+			}
+		}
+		else {
+			System.out.println("Olá, relis mortal vulgarmente conhecido como " + nome + "\nSinto informar, mas você não é o escolhido para o funcionamento desta aplicação. Tenha um bom dia.");
+			String AAc = teclado.nextLine();
+		}
+		
+	}
+}
